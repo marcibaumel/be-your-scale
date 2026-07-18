@@ -3,8 +3,10 @@ extends CharacterBody3D
 
 var SPEED: float = 5.0
 var JUMP_VELOCITY: float = 4.5
-var GRAVITY:float = 9.68
+var GRAVITY: float = 9.68
 var CAMERA_SENSITIVITY = 0.005
+@export var player_size: float = 1.0: set = set_player_size
+var _applied_player_size: float = -1.0
 
 const FREQ = 2.0
 const AMP = 0.08
@@ -13,8 +15,18 @@ var signwave_timer = 0.0
 @onready var head = $Head
 @onready var camera = $Head/Camera3D
 
+func set_player_size(value: float) -> void:
+	player_size = max(value, 0.01)
+	scale = Vector3.ONE * player_size
+	_applied_player_size = player_size
+
 func _ready():
+	set_player_size(player_size)
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+
+func _process(_delta: float) -> void:
+	if !is_equal_approx(player_size, _applied_player_size):
+		set_player_size(player_size)
 	
 func _unhandled_input(event: InputEvent) -> void:
 	if event is InputEventMouseMotion:
@@ -25,12 +37,11 @@ func _unhandled_input(event: InputEvent) -> void:
 func _headbob(time) -> Vector3:
 	var pos = Vector3.ZERO
 	pos.y = sin(time * FREQ) * AMP
-	pos.x = cos(time * FREQ/2) * AMP
+	pos.x = cos(time * FREQ / 2) * AMP
 	return pos
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity
-	
 	if not is_on_floor():
 		velocity += get_gravity() * delta
 
