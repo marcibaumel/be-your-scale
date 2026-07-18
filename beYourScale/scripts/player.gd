@@ -6,6 +6,10 @@ var JUMP_VELOCITY: float = 4.5
 var GRAVITY:float = 9.68
 var CAMERA_SENSITIVITY = 0.005
 
+const FREQ = 2.0
+const AMP = 0.08
+var signwave_timer = 0.0
+
 @onready var head = $Head
 @onready var camera = $Head/Camera3D
 
@@ -17,9 +21,15 @@ func _unhandled_input(event: InputEvent) -> void:
 		head.rotate_y(-event.relative.x * CAMERA_SENSITIVITY)
 		camera.rotate_x(-event.relative.y * CAMERA_SENSITIVITY)
 		camera.rotation.x = clamp(camera.rotation.x, deg_to_rad(-40), deg_to_rad(60))
+		
+func _headbob(time) -> Vector3:
+	var pos = Vector3.ZERO
+	pos.y = sin(time * FREQ) * AMP
+	pos.x = cos(time * FREQ/2) * AMP
+	return pos
 
 func _physics_process(delta: float) -> void:
-	# Add the gravity.
+	# Add the gravity
 	
 	if not is_on_floor():
 		velocity += get_gravity() * delta
@@ -41,7 +51,10 @@ func _physics_process(delta: float) -> void:
 		velocity.x = direction.x * SPEED
 		velocity.z = direction.z * SPEED
 	else:
-		velocity.x = 0.0
-		velocity.z = 0.0
+		velocity.x = lerp(velocity.x, direction.x * SPEED, delta * 5.0)
+		velocity.z = lerp(velocity.z, direction.z * SPEED, delta * 5.0)
+		
+	signwave_timer += delta * velocity.length() * float(is_on_floor())
+	camera.transform.origin = _headbob(signwave_timer)
 
 	move_and_slide()
