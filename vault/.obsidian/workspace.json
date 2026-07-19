@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "GDD/Game Design Document.md",
+                "file": "Translations/TOKENS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Game Design Document"
+              "title": "TOKENS"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "GDD/Game Design Document.md",
+                "file": "Translations/TOKENS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Game Design Document"
+              "title": "Backlinks for TOKENS"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "GDD/Game Design Document.md",
+                "file": "Translations/TOKENS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Game Design Document"
+              "title": "Outgoing links from TOKENS"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "GDD/Game Design Document.md",
+                "file": "Translations/TOKENS.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Game Design Document"
+              "title": "Outline of TOKENS"
             }
           }
         ]
@@ -185,12 +185,14 @@
   },
   "active": "b247ba51b2d78153",
   "lastOpenFiles": [
-    "Translations/hu-HU.md",
+    "Welcome.md",
+    "Translations/TOKENS.md",
     "GDD/Game Design Document.md",
+    "Know-hows",
+    "Translations/hu-HU.md",
     "GDD",
     "Translations/en-US.md",
     "Script/Synopsis.md",
-    "Welcome.md",
     "Translations",
     "Script",
     "create a link.md"
