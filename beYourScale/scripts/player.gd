@@ -5,12 +5,13 @@ var SPEED: float = 5.0
 var JUMP_VELOCITY: float = 4.5
 var GRAVITY: float = 9.68
 var CAMERA_SENSITIVITY = 0.005
-@export var player_size: float = 1.0: set = set_player_size
 var _applied_player_size: float = -1.0
 
 const FREQ = 2.0
 const AMP = 0.08
 var signwave_timer = 0.0
+
+@export var player_size: float = 1.0: set = set_player_size
 
 @onready var head = $Head
 @onready var camera = $Head/Camera3D
