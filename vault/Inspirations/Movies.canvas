@@ -1,0 +1,9 @@
+{
+	"nodes":[
+		{"id":"05eeaef149e2b9fb","type":"file","file":"Inspirations/Assets/Pasted image 20260719115252.png","x":-760,"y":-580,"width":277,"height":400},
+		{"id":"70fa0a277d2f6060","x":-420,"y":-580,"width":640,"height":50,"type":"text","text":"https://www.imdb.com/title/tt0087909/?ref_=nv_sr_srsg_3_tt_6_nm_2_in_0_q_phen"}
+	],
+	"edges":[
+		{"id":"7917ec1b185d8b6d","fromNode":"70fa0a277d2f6060","fromSide":"left","toNode":"05eeaef149e2b9fb","toSide":"right"}
+	]
+}

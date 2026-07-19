@@ -11,14 +11,17 @@
             "id": "b247ba51b2d78153",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "Translations/TOKENS.md",
-                "mode": "source",
-                "source": false
+                "file": "Inspirations/Movies.canvas",
+                "viewState": {
+                  "x": -66.34647107087449,
+                  "y": -154.97363547756683,
+                  "zoom": 0.3333333333333332
+                }
               },
-              "icon": "lucide-file",
-              "title": "TOKENS"
+              "icon": "lucide-layout-dashboard",
+              "title": "Movies"
             }
           }
         ]
@@ -94,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Translations/TOKENS.md",
+                "file": "Inspirations/Movies.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +107,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for TOKENS"
+              "title": "Backlinks for Movies"
             }
           },
           {
@@ -113,12 +116,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Translations/TOKENS.md",
+                "file": "Inspirations/Movies.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from TOKENS"
+              "title": "Outgoing links from Movies"
             }
           },
           {
@@ -156,13 +159,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Translations/TOKENS.md",
+                "file": "Inspirations/Movies.canvas",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of TOKENS"
+              "title": "Outline of Movies"
             }
           }
         ]
@@ -185,8 +188,17 @@
   },
   "active": "b247ba51b2d78153",
   "lastOpenFiles": [
-    "Welcome.md",
+    "Inspirations/Assets",
+    "Inspirations/Assets/Pasted image 20260719115252.png",
+    "Inspirations/Movies.md",
+    "Inspirations/Movies.canvas",
+    "Pasted image 20260719114919.png",
+    "Templates/inspiration_template.md",
+    "Templates",
+    "Untitled.base",
     "Translations/TOKENS.md",
+    "Inspirations",
+    "Welcome.md",
     "GDD/Game Design Document.md",
     "Know-hows",
     "Translations/hu-HU.md",
