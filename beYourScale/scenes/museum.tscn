@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://ckh5i5qmk4g4m"]
+
+[ext_resource type="PackedScene" uid="uid://ojp6t6wodhci" path="res://assets/museum/Museum.fbx" id="1_5qjhm"]
+[ext_resource type="PackedScene" uid="uid://dom0w0cgpobtn" path="res://assets/museum/Screen.fbx" id="2_kf0j1"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_5qjhm"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_kf0j1"]
+
+[node name="Museum" type="Node3D" unique_id=141824291]
+
+[node name="Node3D" type="Node3D" parent="." unique_id=1087271901]
+
+[node name="Museum" parent="." unique_id=240411197 instance=ExtResource("1_5qjhm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5778743, 0, 1.147229)
+
+[node name="Screen" parent="." unique_id=1639979249 instance=ExtResource("2_kf0j1")]
+transform = Transform3D(1.425, 0, 0, 0, 1.425, 0, 0, 0, 1.425, -8.295097, 0.01438117, 15.962275)
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="." unique_id=1158938287]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.972703, 2.039617, 16.022995)
+process_material = SubResource("ParticleProcessMaterial_5qjhm")
+draw_pass_1 = SubResource("SphereMesh_kf0j1")
