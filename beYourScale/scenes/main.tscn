@@ -72,7 +72,16 @@ size = Vector3(1, 5, 50)
 [node name="Player" type="CharacterBody3D" parent="." unique_id=1928399376]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.7, 1.8, 0)
 script = ExtResource("1_o5qli")
-player_size = 0.5
+
+[node name="Logs" type="Label" parent="Player" unique_id=1162637914]
+offset_right = 323.0
+offset_bottom = 56.0
+
+[node name="Height" type="Label" parent="Player" unique_id=1049501541]
+offset_left = -1.0
+offset_top = 66.0
+offset_right = 130.0
+offset_bottom = 118.0
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Player" unique_id=1379032536]
 visible = false
@@ -83,6 +92,7 @@ transform = Transform3D(1.2, 0, 0, 0, 1.21, 0, 0, 0, 1.43, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_sgp6g")
 
 [node name="Head" type="Node3D" parent="Player" unique_id=1515914890]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 0, 0)
 
 [node name="Camera3D" type="Camera3D" parent="Player/Head" unique_id=976355534]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.60000014, -0.3)
