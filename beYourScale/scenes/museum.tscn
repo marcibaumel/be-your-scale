@@ -10,6 +10,7 @@
 [node name="Museum" type="Node3D" unique_id=141824291]
 
 [node name="Node3D" type="Node3D" parent="." unique_id=1087271901]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.2485528, 0)
 
 [node name="Museum" parent="." unique_id=240411197 instance=ExtResource("1_5qjhm")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5778743, 0, 1.147229)
